@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 ;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+#header{
+    
+}
+.before_header{
+  background-image: url(images/Manchester_City_FC_badge.svg.png) ;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: top 8px left 570px;
+  background-color: rgb(241, 241, 241);
+  height: 80px;
+
+
+}
+.before_header > h1{
+    text-align: center;
+    color: aqua;
+    padding-top: 6px;
+}
+.before_header > p{
+    text-align: center;
+    color: aqua;
+
+
+}
+
+.nav_header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 208, 255);
+    width: 100%;
+    height: 46px;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    z-index: 100000;
+}
+.nav li{
+    display: inline-block;
+}
+.nav li a{
+    
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 16px;
+}
+.nav li:hover a{
+    display: inline-block;
+    background-color: blueviolet;
+}
+#slider{
+    margin-top: 16px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #bbb;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+#content{
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+
+     
+}
+
+.text_about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-right: 46px;
+    border-bottom: 2px solid rgb(12, 206, 206);
+}
+
+.text_about_us h1{
+    text-align: center ;
+    margin:5px;
+    letter-spacing: 4px;
+}
+
+.text_about_us p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+hr{
+   border: 1;
+   border-top: 1px solid rgb(11, 205, 205);
+}
+
+.col table {
+    margin-top: 80px;
+    margin-left: auto ;
+    margin-right: auto;
+    width: 80%;
+    
+}
+.col table , th,  td{
+    border: 2px solid rgb(34, 203, 203);
+    text-align: center;
+}
+.col h3{
+    margin: 15px;
+    text-align: center;
+    color: rgb(0, 179, 255);
+}
+#hightlight{
+    background-color: rgb(255, 254, 254);
+    height: 600px;
+    position: relative;
+    
+}
+#hightlight h2 {
+    text-align: center;
+    color: aqua;
+    margin: 32px;
+    border: 2px solid aqua;
+    border-radius:5px ;
+}
+
+#hightlight p {
+    text-align: center;
+    color: aqua;
+    margin: 24;
+}
+
+#hightlight iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateY(-50%) translateX(-50%) ;
+}
+
+#contact {
+    background-color: aqua;
+
+}
+#contact h2{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 32px;
+}
+.social_media{
+    background-color: aqua;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_with_us li{
+    display: inline-block;
+}
+
+.contact_with_us li a{
+    text-decoration: none;
+    font-size: 32px;
+        
+}
+.contact_with_us li a:hover{
+    text-decoration: none;
+    font-size: 32px;
+    color: red;
+        
+}
+
+.infor_footer{
+    background-color: #bbb;
+    height: 46px;
+
+}
+.infor_footer h3{
+    padding: 8px;
+    text-align: center;
+    color: #f2f2f2;
+    }
+.infor_footer h3 a:hover{
+    color: aqua;
+}
